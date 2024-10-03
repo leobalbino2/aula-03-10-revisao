@@ -1,0 +1,39 @@
+Iniciar repositório: git init
+Criar uma pasta dentro do repositório
+Abrir o vscode na pasta criada: code .
+Criar estrutura padrão: pasta css, pasta javascript, pasta img
+Criar arquivos index.html, style.css, script.js
+
+----Estrutura padrão:
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title> Minha Página.com </title>
+  </head>
+  <body></body>
+</html>
+
+----Adicionar os arquivos criados ou editados ao repositório:
+git add .
+
+----Colocar identidade:
+git config --global user.name "Seu nome Completo"
+
+git config --global user.email seumelhoremail@gmail.com 
+
+----Verificar condição atual do repositório e se arquivos ainda não foram adicionados (em vermelho = não adicionado) (em verde = ok):
+----Também mostra o branch e dá para ver se está definido como "master" e não "main"
+git status
+
+----Muda o branch de "master" para "main"
+git branch -m master main
+
+----Fazer git commit
+git commit -m "texto do commit"
+
+----Criar repositório no github
+----Mandar no github
+git remote add origin https://github.com/leobalbino2/exemploderepositorio.git
+git branch -m main
+git push -u origin main
